@@ -144,3 +144,46 @@ add_action('wp_head', 'berkhamsted_reflexology_schema');
  * Add custom functions below this line
  * ========================================
  */
+
+/**
+ * Scroll-triggered fade-in animations
+ * Uses IntersectionObserver for smooth section reveals
+ */
+function berkhamsted_scroll_animations() {
+    ?>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var observer = new IntersectionObserver(function(entries) {
+            entries.forEach(function(entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    // Also make child widgets visible
+                    var widgets = entry.target.querySelectorAll('.elementor-widget');
+                    widgets.forEach(function(widget) {
+                        widget.classList.add('is-visible');
+                    });
+                }
+            });
+        }, {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        });
+
+        // Observe all sections
+        document.querySelectorAll('.elementor-section').forEach(function(section) {
+            observer.observe(section);
+        });
+
+        // Make above-fold content visible immediately
+        var firstSections = document.querySelectorAll('.elementor-section');
+        for (var i = 0; i < Math.min(2, firstSections.length); i++) {
+            firstSections[i].classList.add('is-visible');
+            firstSections[i].querySelectorAll('.elementor-widget').forEach(function(w) {
+                w.classList.add('is-visible');
+            });
+        }
+    });
+    </script>
+    <?php
+}
+add_action('wp_footer', 'berkhamsted_scroll_animations');

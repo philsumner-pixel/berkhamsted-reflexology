@@ -155,29 +155,71 @@ a:hover {
     border-color: var(--color-border) !important;
 }
 
-/* -- Image depth treatment: offset brand border -- */
+/* -- Image depth treatment: soft shadow + subtle round -- */
 .elementor-widget-image .elementor-widget-container {
     position: relative;
 }
 
 .elementor-col-50 .elementor-widget-image img,
 .elementor-column[data-col="50"] .elementor-widget-image img {
-    position: relative;
-    z-index: 1;
-    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow:
+        0 4px 6px rgba(0, 0, 0, 0.04),
+        0 12px 40px rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
 }
 
-.elementor-col-50 .elementor-widget-image .elementor-widget-container::after,
-.elementor-column[data-col="50"] .elementor-widget-image .elementor-widget-container::after {
-    content: '';
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    width: 100%;
-    height: 100%;
-    border: 2px solid var(--color-brand);
-    z-index: 0;
-    border-radius: 4px;
+.elementor-col-50 .elementor-widget-image:hover img,
+.elementor-column[data-col="50"] .elementor-widget-image:hover img {
+    box-shadow:
+        0 6px 12px rgba(0, 0, 0, 0.06),
+        0 20px 50px rgba(0, 0, 0, 0.12);
+    transform: translateY(-4px);
+}
+
+/* ==========================================================================
+   SECTION FADE-IN ANIMATIONS
+   ========================================================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Elements start invisible, animate when .is-visible is added by JS */
+.elementor-section,
+.elementor-widget {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.elementor-section.is-visible,
+.elementor-widget.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Stagger child widgets within a section */
+.is-visible .elementor-widget:nth-child(1) { transition-delay: 0.05s; }
+.is-visible .elementor-widget:nth-child(2) { transition-delay: 0.15s; }
+.is-visible .elementor-widget:nth-child(3) { transition-delay: 0.25s; }
+
+/* Ensure header and nav are always visible */
+.header,
+.header .elementor-section,
+.header .elementor-widget,
+.nav,
+.elementor-location-header,
+.elementor-location-header .elementor-section,
+.elementor-location-header .elementor-widget {
+    opacity: 1 !important;
+    transform: none !important;
 }
 
 /* -- Footer: keep it light, just add subtle separation -- */
