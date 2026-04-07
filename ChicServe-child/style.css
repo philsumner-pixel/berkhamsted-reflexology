@@ -192,23 +192,24 @@ a:hover {
 }
 
 /* Elements start invisible, animate when .is-visible is added by JS */
-.elementor-section,
-.elementor-widget {
+/* IMPORTANT: Only apply on the frontend, not in Elementor editor */
+body:not(.elementor-editor-active) .elementor-section,
+body:not(.elementor-editor-active) .elementor-widget {
     opacity: 0;
     transform: translateY(30px);
     transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-.elementor-section.is-visible,
-.elementor-widget.is-visible {
+body:not(.elementor-editor-active) .elementor-section.is-visible,
+body:not(.elementor-editor-active) .elementor-widget.is-visible {
     opacity: 1;
     transform: translateY(0);
 }
 
 /* Stagger child widgets within a section */
-.is-visible .elementor-widget:nth-child(1) { transition-delay: 0.05s; }
-.is-visible .elementor-widget:nth-child(2) { transition-delay: 0.15s; }
-.is-visible .elementor-widget:nth-child(3) { transition-delay: 0.25s; }
+body:not(.elementor-editor-active) .is-visible .elementor-widget:nth-child(1) { transition-delay: 0.05s; }
+body:not(.elementor-editor-active) .is-visible .elementor-widget:nth-child(2) { transition-delay: 0.15s; }
+body:not(.elementor-editor-active) .is-visible .elementor-widget:nth-child(3) { transition-delay: 0.25s; }
 
 /* Ensure header and nav are always visible */
 .header,
