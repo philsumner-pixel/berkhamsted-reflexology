@@ -137,6 +137,69 @@ function berkhamsted_reflexology_schema() {
 
         echo '<script type="application/ld+json">' . json_encode($faq, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
     }
+
+    // Menopause page schema
+    if (is_page('reflexology-for-menopause')) {
+        $service = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'Service',
+            'name' => 'Reflexology for Menopause',
+            'description' => 'Specialist menopause reflexology in Berkhamsted, Hertfordshire. Advanced techniques targeting the endocrine system to support women through perimenopause and menopause.',
+            'provider' => array(
+                '@type' => 'HealthAndBeautyBusiness',
+                'name' => 'Berkhamsted Reflexology',
+                'url' => 'https://berkhamstedreflexology.com',
+            ),
+            'areaServed' => array(
+                '@type' => 'City',
+                'name' => 'Berkhamsted',
+            ),
+            'serviceType' => 'Menopause Reflexology',
+        );
+
+        echo '<script type="application/ld+json">' . json_encode($service, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+
+        $meno_faq = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'FAQPage',
+            'mainEntity' => array(
+                array(
+                    '@type' => 'Question',
+                    'name' => 'Can reflexology help with hot flushes?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'Many women experience a reduction in both the frequency and intensity of hot flushes after regular reflexology. The treatment works by supporting the endocrine system to rebalance hormone levels naturally.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'How many reflexology sessions do I need for menopause symptoms?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'An initial course of 4-6 weekly sessions is typically recommended, followed by maintenance every 2-4 weeks. However, many women notice benefits after just one or two treatments.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'Is reflexology safe alongside HRT?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'Yes. Reflexology is non-invasive and has no known side effects. It works alongside any HRT or medication you may be taking. It is a complementary therapy, not a replacement for medical treatment.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'Do I need a GP referral for reflexology?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'No referral is needed. You can book directly with Jenny at Berkhamsted Reflexology. She is happy to work alongside your GP or other healthcare providers.',
+                    ),
+                ),
+            ),
+        );
+
+        echo '<script type="application/ld+json">' . json_encode($meno_faq, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+    }
 }
 add_action('wp_head', 'berkhamsted_reflexology_schema');
 
