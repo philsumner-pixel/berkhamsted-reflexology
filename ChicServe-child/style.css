@@ -102,6 +102,17 @@ a:hover {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.12);
 }
 
+/* -- Standalone CTA button (single button in its own section) -- */
+.elementor-section .elementor-container > .elementor-column:only-child .elementor-widget-button {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.elementor-section .elementor-container > .elementor-column:only-child .elementor-widget-button .elementor-button {
+    font-size: 0.95em !important;
+    padding: 18px 60px !important;
+}
+
 /* -- Navigation: cleaner, more spacious -- */
 .nav a {
     font-family: var(--font-body);
