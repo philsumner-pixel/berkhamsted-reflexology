@@ -113,6 +113,13 @@ a:hover {
     padding: 18px 60px !important;
 }
 
+/* Full-width divider line above CTA section */
+.elementor-section:has(.elementor-column:only-child .elementor-widget-button) {
+    border-top: 1px solid var(--color-border);
+    padding-top: 40px;
+    margin-top: 10px;
+}
+
 /* -- Navigation: cleaner, more spacious -- */
 .nav a {
     font-family: var(--font-body);
