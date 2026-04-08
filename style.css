@@ -326,7 +326,7 @@ body:not(.elementor-editor-active) .is-visible .elementor-widget:nth-child(3) { 
     font-size: 0.85em;
 }
 
-/* -- Auto-deploy test: if you see this, Deployer for Git is working -- */
+/* -- Auto-deploy test: pipeline verified -- */
 
 /* -- Smooth scrolling -- */
 html {
