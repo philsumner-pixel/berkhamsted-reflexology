@@ -200,8 +200,174 @@ function berkhamsted_reflexology_schema() {
 
         echo '<script type="application/ld+json">' . json_encode($meno_faq, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
     }
+
+    // Pregnancy page schema
+    if (is_page('reflexology-for-pregnancy')) {
+        $service = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'Service',
+            'name' => 'Reflexology for Pregnancy',
+            'description' => 'Gentle, specialist pregnancy reflexology in Berkhamsted, Hertfordshire. Safe, nurturing treatments to support you through every trimester and beyond.',
+            'provider' => array(
+                '@type' => 'HealthAndBeautyBusiness',
+                'name' => 'Berkhamsted Reflexology',
+                'url' => 'https://berkhamstedreflexology.com',
+            ),
+            'areaServed' => array(
+                '@type' => 'City',
+                'name' => 'Berkhamsted',
+            ),
+            'serviceType' => 'Pregnancy Reflexology',
+        );
+
+        echo '<script type="application/ld+json">' . json_encode($service, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+
+        $pregnancy_faq = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'FAQPage',
+            'mainEntity' => array(
+                array(
+                    '@type' => 'Question',
+                    'name' => 'Is reflexology safe during pregnancy?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'Yes. Reflexology is a gentle, non-invasive therapy that is safe throughout pregnancy when performed by a qualified practitioner. Jenny is trained in maternity reflexology and adapts treatments for each trimester.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'When can I start having reflexology during pregnancy?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'You can have reflexology at any stage of pregnancy. Many women find it particularly beneficial from the second trimester onwards for managing symptoms like swollen ankles, back pain and sleep difficulties.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'Can reflexology help with pregnancy symptoms like morning sickness?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'Many women experience relief from common pregnancy symptoms including nausea, fatigue, back pain, swollen ankles and sleep disruption through regular reflexology treatments.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'Can reflexology help prepare for labour?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'Yes. Priming reflexology in the final weeks of pregnancy can help prepare your body for labour. Many women find it helps them feel calmer and more ready for birth.',
+                    ),
+                ),
+            ),
+        );
+
+        echo '<script type="application/ld+json">' . json_encode($pregnancy_faq, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+    }
+
+    // Anxiety page schema
+    if (is_page('reflexology-for-anxiety')) {
+        $service = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'Service',
+            'name' => 'Reflexology for Anxiety & Stress',
+            'description' => 'Calming reflexology treatments in Berkhamsted, Hertfordshire, to ease anxiety, quiet an overactive mind and restore a sense of balance.',
+            'provider' => array(
+                '@type' => 'HealthAndBeautyBusiness',
+                'name' => 'Berkhamsted Reflexology',
+                'url' => 'https://berkhamstedreflexology.com',
+            ),
+            'areaServed' => array(
+                '@type' => 'City',
+                'name' => 'Berkhamsted',
+            ),
+            'serviceType' => 'Anxiety & Stress Reflexology',
+        );
+
+        echo '<script type="application/ld+json">' . json_encode($service, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+
+        $anxiety_faq = array(
+            '@context' => 'https://schema.org',
+            '@type' => 'FAQPage',
+            'mainEntity' => array(
+                array(
+                    '@type' => 'Question',
+                    'name' => 'Can reflexology help with anxiety?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'Yes. Reflexology activates the parasympathetic nervous system, helping to calm the body\'s stress response. Many people experience reduced anxiety, better sleep and an improved sense of wellbeing after treatment.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'How does reflexology reduce stress?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'Reflexology works on specific reflex points linked to the nervous system, adrenal glands and areas holding tension. This helps lower cortisol levels, slow heart rate and bring the body back into balance.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'How many reflexology sessions do I need for anxiety?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'Many people feel calmer after just one session. For ongoing anxiety, a course of 4-6 weekly sessions is often recommended, followed by regular maintenance treatments.',
+                    ),
+                ),
+                array(
+                    '@type' => 'Question',
+                    'name' => 'Is reflexology a replacement for therapy or medication?',
+                    'acceptedAnswer' => array(
+                        '@type' => 'Answer',
+                        'text' => 'No. Reflexology is a complementary therapy that works alongside medical treatment, not instead of it. Jenny is happy to work with your GP or mental health professional.',
+                    ),
+                ),
+            ),
+        );
+
+        echo '<script type="application/ld+json">' . json_encode($anxiety_faq, JSON_UNESCAPED_SLASHES | JSON_PRETTY_PRINT) . '</script>' . "\n";
+    }
 }
 add_action('wp_head', 'berkhamsted_reflexology_schema');
+
+/**
+ * Add Services dropdown to navigation menu
+ * Injects a Services parent item with submenu linking to service pages
+ */
+function berkhamsted_add_services_dropdown($items, $args) {
+    // Only modify the primary menu
+    if ($args->theme_location !== 'primary' && $args->theme_location !== 'menu-1') {
+        // Try to match by menu container or common theme locations
+        if (strpos($args->menu_class, 'primary') === false && 
+            strpos($args->menu_class, 'main') === false &&
+            strpos($args->container_class, 'primary') === false) {
+            return $items;
+        }
+    }
+
+    // Build the Services dropdown HTML
+    $services_menu = '
+    <li class="menu-item menu-item-has-children berkhamsted-services-dropdown">
+        <a href="#">Services</a>
+        <ul class="sub-menu">
+            <li class="menu-item"><a href="/reflexology-for-menopause/">Menopause</a></li>
+            <li class="menu-item"><a href="/reflexology-for-pregnancy/">Pregnancy</a></li>
+            <li class="menu-item"><a href="/reflexology-for-anxiety/">Anxiety & Stress</a></li>
+        </ul>
+    </li>';
+
+    // Find where to insert (after HOME)
+    // Look for the first </li> and insert after it
+    $first_item_end = strpos($items, '</li>');
+    if ($first_item_end !== false) {
+        $items = substr($items, 0, $first_item_end + 5) . $services_menu . substr($items, $first_item_end + 5);
+    } else {
+        // Fallback: prepend
+        $items = $services_menu . $items;
+    }
+
+    return $items;
+}
+add_filter('wp_nav_menu_items', 'berkhamsted_add_services_dropdown', 10, 2);
 
 /**
  * Add custom functions below this line
