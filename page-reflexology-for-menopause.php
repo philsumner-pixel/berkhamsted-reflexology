@@ -18,7 +18,7 @@ get_header(); ?>
     align-items: center;
     justify-content: center;
     text-align: center;
-    background: url('<?php echo get_stylesheet_directory_uri(); ?>/../ChicServe/../../../uploads/2021/04/3PC2080A-scaled.jpeg') center center / cover no-repeat;
+    background: url('<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg') center center / cover no-repeat;
     padding: 80px 20px;
 }
 .meno-hero::before {
@@ -314,7 +314,7 @@ get_header(); ?>
                 <p>I have completed specialist training in Menopause Reflexology under Sally Earlam and Women's Health Reflexology under Hagar Basis. These advanced techniques go beyond standard reflexology, specifically targeting the endocrine system and the hormonal pathways that are most affected during menopause.</p>
             </div>
             <div>
-                <img src="<?php echo esc_url(get_site_url()); ?>/wp-content/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Jenny Sumner providing reflexology treatment" />
+                <img src="<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Jenny Sumner providing reflexology treatment" />
             </div>
         </div>
     </div>
@@ -343,7 +343,7 @@ get_header(); ?>
     <div class="meno-inner">
         <div class="meno-two-col meno-text-40">
             <div>
-                <img src="<?php echo esc_url(get_site_url()); ?>/wp-content/uploads/2021/04/2PC1981A-scaled.jpg" alt="Reflexology treatment at Berkhamsted Reflexology clinic" />
+                <img src="<?php echo content_url(); ?>/uploads/2021/04/2PC1981A-scaled.jpg" alt="Reflexology treatment at Berkhamsted Reflexology clinic" />
             </div>
             <div>
                 <h2>What to expect from your treatment</h2>
