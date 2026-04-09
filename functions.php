@@ -334,14 +334,9 @@ add_action('wp_head', 'berkhamsted_reflexology_schema');
  * Injects a Services parent item with submenu linking to service pages
  */
 function berkhamsted_add_services_dropdown($items, $args) {
-    // Only modify the primary menu
-    if ($args->theme_location !== 'primary' && $args->theme_location !== 'menu-1') {
-        // Try to match by menu container or common theme locations
-        if (strpos($args->menu_class, 'primary') === false && 
-            strpos($args->menu_class, 'main') === false &&
-            strpos($args->container_class, 'primary') === false) {
-            return $items;
-        }
+    // ChicServe uses 'top_menu' as the theme location
+    if (!isset($args->theme_location) || $args->theme_location !== 'top_menu') {
+        return $items;
     }
 
     // Build the Services dropdown HTML
