@@ -411,3 +411,79 @@ function berkhamsted_scroll_animations() {
     <?php
 }
 add_action('wp_footer', 'berkhamsted_scroll_animations');
+
+/**
+ * SEO Meta Tags - Custom meta descriptions, Open Graph, and canonical URLs
+ * Targets service pages for better search and social sharing
+ */
+function berkhamsted_seo_meta_tags() {
+    $site_name = 'Berkhamsted Reflexology';
+    $default_image = 'https://berkhamstedreflexology.com/wp-content/uploads/2021/04/3PC2080A-scaled.jpeg';
+    
+    // Homepage
+    if (is_front_page()) {
+        $title = 'Berkhamsted Reflexology | Jenny Sumner MAR';
+        $description = 'Private reflexology clinic in Berkhamsted, Hertfordshire. Specialist treatments for menopause, pregnancy, anxiety and general wellbeing. Book with Jenny Sumner MAR.';
+        $url = home_url('/');
+        $image = $default_image;
+    }
+    // Menopause page
+    elseif (is_page('reflexology-for-menopause')) {
+        $title = 'Reflexology for Menopause | Berkhamsted Reflexology';
+        $description = 'Specialist menopause reflexology in Berkhamsted. Advanced techniques to help with hot flushes, sleep disruption, mood changes and hormonal balance. Book with Jenny Sumner MAR.';
+        $url = home_url('/reflexology-for-menopause/');
+        $image = $default_image;
+    }
+    // Pregnancy page
+    elseif (is_page('reflexology-for-pregnancy')) {
+        $title = 'Reflexology for Pregnancy | Berkhamsted Reflexology';
+        $description = 'Gentle pregnancy reflexology in Berkhamsted. Safe, nurturing treatments to support you through every trimester — easing swollen ankles, back pain, fatigue and anxiety.';
+        $url = home_url('/reflexology-for-pregnancy/');
+        $image = 'https://berkhamstedreflexology.com/wp-content/uploads/2021/04/3PC2383A-1-scaled.jpeg';
+    }
+    // Anxiety page
+    elseif (is_page('reflexology-for-anxiety')) {
+        $title = 'Reflexology for Anxiety & Stress | Berkhamsted Reflexology';
+        $description = 'Calming reflexology in Berkhamsted to ease anxiety, quiet an overactive mind and restore balance. A safe space to let go of tension. Book with Jenny Sumner MAR.';
+        $url = home_url('/reflexology-for-anxiety/');
+        $image = $default_image;
+    }
+    else {
+        return; // Don't add custom meta to other pages
+    }
+    
+    // Meta description
+    echo '<meta name="description" content="' . esc_attr($description) . '" />' . "\n";
+    
+    // Canonical URL
+    echo '<link rel="canonical" href="' . esc_url($url) . '" />' . "\n";
+    
+    // Open Graph tags (Facebook, LinkedIn, WhatsApp)
+    echo '<meta property="og:type" content="website" />' . "\n";
+    echo '<meta property="og:title" content="' . esc_attr($title) . '" />' . "\n";
+    echo '<meta property="og:description" content="' . esc_attr($description) . '" />' . "\n";
+    echo '<meta property="og:url" content="' . esc_url($url) . '" />' . "\n";
+    echo '<meta property="og:site_name" content="' . esc_attr($site_name) . '" />' . "\n";
+    echo '<meta property="og:image" content="' . esc_url($image) . '" />' . "\n";
+    echo '<meta property="og:image:width" content="1200" />' . "\n";
+    echo '<meta property="og:image:height" content="630" />' . "\n";
+    echo '<meta property="og:locale" content="en_GB" />' . "\n";
+    
+    // Twitter Card tags
+    echo '<meta name="twitter:card" content="summary_large_image" />' . "\n";
+    echo '<meta name="twitter:title" content="' . esc_attr($title) . '" />' . "\n";
+    echo '<meta name="twitter:description" content="' . esc_attr($description) . '" />' . "\n";
+    echo '<meta name="twitter:image" content="' . esc_url($image) . '" />' . "\n";
+}
+add_action('wp_head', 'berkhamsted_seo_meta_tags', 1);
+
+/**
+ * Remove WordPress default meta if we're adding custom
+ * Prevents duplicate meta descriptions
+ */
+function berkhamsted_remove_default_meta() {
+    // Remove Yoast or other SEO plugin meta if installed later
+    // This ensures our custom meta takes precedence on service pages
+}
+add_action('wp_head', 'berkhamsted_remove_default_meta', 0);
+
