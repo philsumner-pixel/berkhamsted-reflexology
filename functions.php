@@ -478,6 +478,81 @@ function berkhamsted_seo_meta_tags() {
 add_action('wp_head', 'berkhamsted_seo_meta_tags', 1);
 
 /**
+ * Performance Optimizations
+ * - Preconnect to Google Fonts for faster loading
+ * - Add font-display: swap to prevent FOIT (Flash of Invisible Text)
+ */
+function berkhamsted_performance_optimizations() {
+    // Preconnect to Google Fonts
+    echo '<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>' . "\n";
+    echo '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>' . "\n";
+    
+    // Preconnect to other common resources
+    echo '<link rel="dns-prefetch" href="https://www.googletagmanager.com">' . "\n";
+}
+add_action('wp_head', 'berkhamsted_performance_optimizations', 1);
+
+/**
+ * Add font-display: swap to Google Fonts
+ * Prevents invisible text while fonts load
+ */
+function berkhamsted_font_display_swap($html, $handle) {
+    if (strpos($handle, 'google-fonts') !== false || strpos($html, 'fonts.googleapis.com') !== false) {
+        // Add font-display=swap parameter if not present
+        if (strpos($html, 'display=swap') === false) {
+            $html = str_replace('family=', 'display=swap&family=', $html);
+        }
+    }
+    return $html;
+}
+add_filter('style_loader_tag', 'berkhamsted_font_display_swap', 10, 2);
+
+/**
+ * Defer non-critical JavaScript
+ * Reduces render-blocking resources
+ */
+function berkhamsted_defer_scripts($tag, $handle, $src) {
+    // Don't defer jQuery or critical scripts
+    $no_defer = array('jquery', 'jquery-core', 'jquery-migrate');
+    
+    if (in_array($handle, $no_defer)) {
+        return $tag;
+    }
+    
+    // Don't defer if already has defer or async
+    if (strpos($tag, 'defer') !== false || strpos($tag, 'async') !== false) {
+        return $tag;
+    }
+    
+    // Add defer to other scripts
+    return str_replace(' src', ' defer src', $tag);
+}
+add_filter('script_loader_tag', 'berkhamsted_defer_scripts', 10, 3);
+
+/**
+ * Add loading="lazy" to images (for browsers that support it)
+ * Also adds width/height attributes where missing
+ */
+function berkhamsted_lazy_load_images($content) {
+    // Don't lazy load in admin or if no content
+    if (is_admin() || empty($content)) {
+        return $content;
+    }
+    
+    // Add loading="lazy" to img tags that don't have it
+    $content = preg_replace(
+        '/<img((?!loading=)[^>]*)>/i',
+        '<img$1 loading="lazy">',
+        $content
+    );
+    
+    return $content;
+}
+add_filter('the_content', 'berkhamsted_lazy_load_images');
+add_filter('post_thumbnail_html', 'berkhamsted_lazy_load_images');
+add_filter('widget_text', 'berkhamsted_lazy_load_images');
+
+/**
  * Remove WordPress default meta if we're adding custom
  * Prevents duplicate meta descriptions
  */

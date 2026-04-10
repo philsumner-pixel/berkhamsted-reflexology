@@ -71,7 +71,7 @@ get_header(); ?>
                 <p>Reflexology offers a safe, gentle and deeply relaxing treatment that supports your body through the changes of pregnancy. I take extra care to adapt every session to your stage of pregnancy, using specific techniques that are safe and beneficial for both you and your baby.</p>
             </div>
             <div>
-                <img src="<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Relaxing reflexology treatment during pregnancy" />
+                <img src="<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Relaxing reflexology treatment during pregnancy" width="600" height="400" loading="lazy" />
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@ get_header(); ?>
     <div class="srv-inner">
         <div class="srv-two-col-rev">
             <div>
-                <img src="<?php echo content_url(); ?>/uploads/2021/04/2PC1981A-scaled.jpg" alt="Reflexology clinic in Berkhamsted" />
+                <img src="<?php echo content_url(); ?>/uploads/2021/04/2PC1981A-scaled.jpg" alt="Reflexology clinic in Berkhamsted" width="600" height="400" loading="lazy" />
             </div>
             <div>
                 <h2>What to expect from your treatment</h2>

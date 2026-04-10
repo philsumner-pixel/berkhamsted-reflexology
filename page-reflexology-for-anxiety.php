@@ -71,7 +71,7 @@ get_header(); ?>
                 <p>By working specific reflex points linked to the nervous system and adrenal glands, reflexology helps switch your body from "fight or flight" into a calmer, more balanced state. Many clients describe a profound sense of peace during and after treatment — often for the first time in months.</p>
             </div>
             <div>
-                <img src="<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Calming reflexology treatment in Berkhamsted" />
+                <img src="<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Calming reflexology treatment in Berkhamsted" width="600" height="400" loading="lazy" />
             </div>
         </div>
     </div>
@@ -99,7 +99,7 @@ get_header(); ?>
     <div class="srv-inner">
         <div class="srv-two-col-rev">
             <div>
-                <img src="<?php echo content_url(); ?>/uploads/2021/04/2PC1981A-scaled.jpg" alt="Peaceful reflexology clinic in Berkhamsted" />
+                <img src="<?php echo content_url(); ?>/uploads/2021/04/2PC1981A-scaled.jpg" alt="Peaceful reflexology clinic in Berkhamsted" width="600" height="400" loading="lazy" />
             </div>
             <div>
                 <h2>What to expect from your treatment</h2>
