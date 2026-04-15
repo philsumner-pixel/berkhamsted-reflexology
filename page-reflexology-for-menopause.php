@@ -299,7 +299,7 @@ get_header(); ?>
     <div class="meno-hero-content">
         <div class="meno-hero-label">Specialist Support</div>
         <h1>Reflexology for Menopause</h1>
-        <p class="meno-hero-sub">Expert support for women navigating perimenopause and menopause, from a specialist-trained reflexologist in Berkhamsted.</p>
+        <p class="meno-hero-sub">I see you. And I can help.</p>
     </div>
 </div>
 
@@ -308,10 +308,11 @@ get_header(); ?>
     <div class="meno-inner">
         <div class="meno-two-col meno-text-60">
             <div>
-                <h2>You deserve to feel supported</h2>
-                <p>Menopause is not an illness — it's a natural transition. But the symptoms can be overwhelming. Hot flushes, night sweats, brain fog, disrupted sleep, anxiety, joint pain, mood changes. Many women feel unsupported and unheard during this time.</p>
-                <p><strong>I believe you deserve better.</strong></p>
-                <p>I have completed specialist training in Menopause Reflexology under Sally Earlam and Women's Health Reflexology under Hagar Basis. These advanced techniques go beyond standard reflexology, specifically targeting the endocrine system and the hormonal pathways that are most affected during menopause.</p>
+                <h2>I'll be honest with you</h2>
+                <p>The mountains of information on perimenopause and menopause can be overwhelming. I often find myself experiencing a definite case of information overload — and I work in this field. So if your brain is already stuffed to the brim with midlife concerns, I totally get it.</p>
+                <p>But here's what I need you to know: <strong>I can help.</strong></p>
+                <p>I'm not a menopause expert, nor do I claim to be. But I am a Menopause Reflexology specialist. I've completed advanced training under Sally Earlam (Menopause Reflexology) and Hagar Basis (Women's Health Reflexology) — two of the leading practitioners in the field. These techniques go beyond standard reflexology, specifically targeting the endocrine system and the hormonal pathways most affected during this time.</p>
+                <p>And as a fellow midlife woman navigating this journey myself, I see you. I can comfortably hold space for you, whatever might be coming up.</p>
             </div>
             <div>
                 <img src="<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Jenny Sumner providing reflexology treatment" width="600" height="400" loading="lazy" />
@@ -325,11 +326,12 @@ get_header(); ?>
     <div class="meno-inner">
         <h2>How reflexology supports you through menopause</h2>
         <p>Reflexology works by stimulating specific reflex points on the feet that correspond to the endocrine glands — the pituitary, thyroid, adrenals and ovaries. During menopause, these glands are working overtime to adjust to changing hormone levels. Reflexology supports this process by encouraging the body's own natural rebalancing.</p>
+        <p>It's not a cure. It's not a replacement for HRT or medical treatment. But it's a powerful part of your toolkit — and it has worked wonders for so many of my clients.</p>
 
         <h3>What my clients experience</h3>
         <ul class="meno-benefits">
             <li>Reduced frequency and intensity of hot flushes and night sweats</li>
-            <li>Better quality sleep</li>
+            <li>Better quality sleep (finally!)</li>
             <li>Lower anxiety and improved mood</li>
             <li>Reduced joint pain and stiffness</li>
             <li>Improved mental clarity and reduced brain fog</li>
@@ -347,9 +349,9 @@ get_header(); ?>
             </div>
             <div>
                 <h2>What to expect from your treatment</h2>
-                <p>Every treatment begins with a conversation. I want to understand where you are in your menopause journey, what symptoms are most affecting you, and what you hope to achieve. Your first session includes a full consultation — no two treatments are the same.</p>
-                <p>During the treatment, you'll lie comfortably while I work through specific reflex points tailored to your needs. Most clients find the experience deeply relaxing. Many fall asleep. Sessions last approximately 45–60 minutes.</p>
-                <p>I recommend an initial course of weekly treatments for 4–6 weeks to allow the cumulative benefits to build, followed by maintenance sessions every 2–4 weeks. However, even a single session can provide noticeable relief.</p>
+                <p>Every treatment begins with a conversation. I want to understand where you are in your menopause journey, what symptoms are most affecting you, and what you're hoping to achieve. Your first session includes a full consultation — no two treatments are the same.</p>
+                <p>During the treatment, you'll lie comfortably while I work through specific reflex points tailored to your needs. Most clients find the experience deeply relaxing. Many fall asleep (and that's absolutely fine — it's a sign your body is doing what it needs to do).</p>
+                <p>Reflexology works best cumulatively. I typically recommend weekly sessions for 4–6 weeks to allow the benefits to build, followed by maintenance every 2–4 weeks. But even a single session can provide noticeable relief. Little by little, step by step.</p>
             </div>
         </div>
     </div>
@@ -361,7 +363,7 @@ get_header(); ?>
         <h2 style="text-align: center;">What my clients say</h2>
         <div class="meno-testimonials">
             <div class="meno-testimonial-card">
-                <p>Jenni is the most incredible, caring and skilled reflexologist I have been to. Going through perimenopause and a neurodivergent diagnosis, Jenni's treatments feel essential for my wellbeing and relaxation.</p>
+                <p>Jenny is the most incredible, caring and skilled reflexologist I have been to. Going through perimenopause and a neurodivergent diagnosis, Jenny's treatments feel essential for my wellbeing and relaxation.</p>
                 <span class="meno-testimonial-author">— Caralyn D.</span>
             </div>
             <div class="meno-testimonial-card">
@@ -381,7 +383,8 @@ get_header(); ?>
     <div class="meno-inner">
         <h2>Specialist training in menopause reflexology</h2>
         <p>I trained in the Eunice Ingham method at The London School of Reflexology and hold a Level 3 qualification with full insurance. I am a proud member of the Association of Reflexologists.</p>
-        <p>My specialist menopause and women's health training was completed under two of the leading practitioners in the field: Sally Earlam (Menopause Reflexology) and Hagar Basis (Women's Health Reflexology). This additional training equips me with advanced techniques specifically designed to support women through hormonal transitions.</p>
+        <p>My specialist menopause and women's health training was completed under Sally Earlam (Menopause Reflexology) and Hagar Basis (Women's Health Reflexology). This additional training equips me with advanced techniques specifically designed to support women through hormonal transitions.</p>
+        <p>At the heart of it all, my purpose is simple: to help support your body and mind to be in the best state they can be.</p>
     </div>
 </div>
 
@@ -393,28 +396,28 @@ get_header(); ?>
         <div class="meno-faq-item">
             <button class="meno-faq-question" onclick="this.parentElement.classList.toggle('active')">Can reflexology help with hot flushes?</button>
             <div class="meno-faq-answer">
-                <p>Many women experience a reduction in both the frequency and intensity of hot flushes after regular reflexology. The treatment works by supporting the endocrine system to rebalance hormone levels naturally.</p>
+                <p>Many women experience a reduction in both the frequency and intensity of hot flushes after regular reflexology. The treatment works by supporting the endocrine system to rebalance hormone levels naturally. It's not magic — but it's powerful stuff.</p>
             </div>
         </div>
 
         <div class="meno-faq-item">
             <button class="meno-faq-question" onclick="this.parentElement.classList.toggle('active')">How many sessions will I need?</button>
             <div class="meno-faq-answer">
-                <p>I typically recommend an initial course of 4–6 weekly sessions, followed by maintenance every 2–4 weeks. However, many women notice benefits after just one or two treatments.</p>
+                <p>I typically recommend an initial course of 4–6 weekly sessions, followed by maintenance every 2–4 weeks. However, many women notice benefits after just one or two treatments. We'll work out what's right for you.</p>
             </div>
         </div>
 
         <div class="meno-faq-item">
-            <button class="meno-faq-question" onclick="this.parentElement.classList.toggle('active')">Is reflexology safe during menopause?</button>
+            <button class="meno-faq-question" onclick="this.parentElement.classList.toggle('active')">Is reflexology safe alongside HRT?</button>
             <div class="meno-faq-answer">
-                <p>Absolutely. Reflexology is non-invasive and has no known side effects. It works alongside any HRT or medication you may be taking — it is not a replacement for medical treatment.</p>
+                <p>Absolutely. Reflexology is non-invasive and has no known side effects. It works alongside any HRT or medication you may be taking — it is not a replacement for medical treatment. Think of it as another tool in your toolkit.</p>
             </div>
         </div>
 
         <div class="meno-faq-item">
             <button class="meno-faq-question" onclick="this.parentElement.classList.toggle('active')">Do I need a referral from my GP?</button>
             <div class="meno-faq-answer">
-                <p>No. You can book directly. However, I'm happy to work alongside your GP or other healthcare providers.</p>
+                <p>No. You can book directly. However, I'm always happy to work alongside your GP or other healthcare providers if that's helpful.</p>
             </div>
         </div>
     </div>
@@ -423,8 +426,8 @@ get_header(); ?>
 <!-- SECTION 8: CTA -->
 <div class="meno-cta">
     <div class="meno-inner">
-        <h2>Ready to feel supported through menopause?</h2>
-        <p>Book your appointment today. Your first session includes a full consultation so we can discuss your needs and create a treatment plan that works for you.</p>
+        <h2>Let me support you</h2>
+        <p>If you're struggling with menopause symptoms, this is your nudge to consider reflexology as part of your toolkit. Book your appointment today — your first session includes a full consultation so we can discuss your needs.</p>
         <a href="https://jennysumnerbookings.as.me/" target="_blank" class="meno-cta-btn">Book Your Appointment</a>
     </div>
 </div>

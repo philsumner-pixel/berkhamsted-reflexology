@@ -56,7 +56,7 @@ get_header(); ?>
     <div class="srv-hero-content">
         <div class="srv-hero-label">Nurturing Support</div>
         <h1>Reflexology for Pregnancy</h1>
-        <p class="srv-hero-sub">Gentle, specialist reflexology to support you through every trimester and beyond, from a qualified reflexologist in Berkhamsted.</p>
+        <p class="srv-hero-sub">A gentle hour just for you — to rest, restore and feel looked after.</p>
     </div>
 </div>
 
@@ -65,10 +65,11 @@ get_header(); ?>
     <div class="srv-inner">
         <div class="srv-two-col">
             <div>
-                <h2>A calm space for you and your baby</h2>
-                <p>Pregnancy is a beautiful and transformative experience — but it can also be physically and emotionally demanding. Swollen ankles, back pain, nausea, fatigue, disrupted sleep and anxiety are all common, and often women are told to simply "put up with it."</p>
+                <h2>You don't have to just "put up with it"</h2>
+                <p>Pregnancy is beautiful and transformative — but let's be honest, it can also be physically and emotionally demanding. The swollen ankles, the back pain, the nausea, the exhaustion, the disrupted sleep, the anxiety about what's to come. So often, women are told to simply "put up with it."</p>
                 <p><strong>You don't have to.</strong></p>
                 <p>Reflexology offers a safe, gentle and deeply relaxing treatment that supports your body through the changes of pregnancy. I take extra care to adapt every session to your stage of pregnancy, using specific techniques that are safe and beneficial for both you and your baby.</p>
+                <p>My training in Women's Health Reflexology under Hagar Basis includes specific techniques for supporting women through pregnancy, fertility and postnatal recovery. I see you — and I would love to support you through this incredible journey.</p>
             </div>
             <div>
                 <img src="<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Relaxing reflexology treatment during pregnancy" width="600" height="400" loading="lazy" />
@@ -81,12 +82,12 @@ get_header(); ?>
 <div class="srv-section srv-warm srv-fade-in">
     <div class="srv-inner">
         <h2>How reflexology supports you during pregnancy</h2>
-        <p>Reflexology works with the body's natural systems to promote balance and wellbeing. During pregnancy, specific reflex points can be used to ease common discomforts and prepare your body for labour. Many midwives now recommend reflexology as a complementary therapy during pregnancy.</p>
+        <p>Reflexology works with your body's natural systems to promote balance and wellbeing. During pregnancy, specific reflex points can be used to ease common discomforts and prepare your body for labour. Many midwives now recommend reflexology as a complementary therapy during pregnancy — and I've seen first-hand the difference it can make.</p>
         <h3>What my clients experience</h3>
         <ul class="srv-benefits">
             <li>Relief from nausea and morning sickness</li>
             <li>Reduced swelling in the feet and ankles</li>
-            <li>Better quality sleep</li>
+            <li>Better quality sleep (so precious right now)</li>
             <li>Easing of back pain and pelvic discomfort</li>
             <li>Lower anxiety and improved emotional wellbeing</li>
             <li>Support for labour preparation in the final weeks</li>
@@ -103,30 +104,31 @@ get_header(); ?>
             </div>
             <div>
                 <h2>What to expect from your treatment</h2>
-                <p>Your first session begins with a thorough consultation so I can understand your pregnancy journey, any symptoms you're experiencing, and how I can best support you. I'll always check in with you about comfort and pressure.</p>
-                <p>During the treatment, you'll be positioned comfortably — usually reclined with support cushions. The treatment focuses on gentle, targeted techniques tailored to your trimester. Sessions last approximately 45–60 minutes.</p>
-                <p>Reflexology is generally safe from 12 weeks onwards. I recommend regular sessions throughout your second and third trimesters for the best cumulative benefit, with more frequent sessions in the final weeks to help prepare for labour.</p>
+                <p>Your first session begins with a thorough consultation so I can understand your pregnancy journey, any symptoms you're experiencing, and how I can best support you. I'll always check in with you about comfort and pressure — this is your time.</p>
+                <p>During the treatment, you'll be positioned comfortably with support cushions. The treatment focuses on gentle, targeted techniques tailored to your trimester. Most clients find it deeply relaxing. Many fall asleep. Sessions last approximately 45–60 minutes.</p>
+                <p>Reflexology is generally safe from 12 weeks onwards. I recommend regular sessions throughout your second and third trimesters for the best cumulative benefit, with more frequent sessions in the final weeks to help prepare for labour. Little by little, step by step.</p>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Testimonials -->
+<!-- ⚠️ PLACEHOLDER TESTIMONIALS - NEED REAL QUOTES FROM JENNY'S PREGNANCY CLIENTS -->
 <div class="srv-section srv-warm srv-fade-in">
     <div class="srv-inner">
         <h2 style="text-align: center;">What my clients say</h2>
         <div class="srv-testimonials">
             <div class="srv-testimonial-card">
                 <p>Jenny's reflexology sessions during my pregnancy were an absolute lifeline. The back pain I'd been struggling with eased significantly after just two sessions.</p>
-                <span class="srv-author">— Pregnancy client</span>
+                <span class="srv-author">— [NEEDS REAL NAME]</span>
             </div>
             <div class="srv-testimonial-card">
                 <p>I looked forward to my appointments every week — it was the one hour where I could truly relax and feel looked after. Jenny made me feel so comfortable and cared for.</p>
-                <span class="srv-author">— Pregnancy client</span>
+                <span class="srv-author">— [NEEDS REAL NAME]</span>
             </div>
             <div class="srv-testimonial-card">
                 <p>I had reflexology throughout my third trimester and I'm convinced it helped me have a calmer, more positive birth experience. I can't recommend Jenny enough.</p>
-                <span class="srv-author">— Pregnancy client</span>
+                <span class="srv-author">— [NEEDS REAL NAME]</span>
             </div>
         </div>
     </div>
@@ -138,6 +140,7 @@ get_header(); ?>
         <h2>Qualified and experienced</h2>
         <p>I trained in the Eunice Ingham method at The London School of Reflexology and hold a Level 3 qualification with full insurance. I am a proud member of the Association of Reflexologists.</p>
         <p>My additional training in Women's Health Reflexology under Hagar Basis includes specific techniques for supporting women through pregnancy, fertility, and postnatal recovery.</p>
+        <p>At the heart of it all, my purpose is simple: to help support your body and mind through this incredible time.</p>
     </div>
 </div>
 
@@ -155,7 +158,7 @@ get_header(); ?>
         </div>
         <div class="srv-faq-item">
             <button class="srv-faq-question" onclick="this.parentElement.classList.toggle('active')">Can reflexology help with labour preparation?</button>
-            <div class="srv-faq-answer"><p>Yes. In the final weeks of pregnancy, specific reflex points can be used to help prepare the body for labour. Many women find that regular sessions in the last few weeks help them feel calmer and more physically ready.</p></div>
+            <div class="srv-faq-answer"><p>Yes. In the final weeks of pregnancy, specific reflex points can be used to help prepare the body for labour. Many women find that regular sessions in the last few weeks help them feel calmer and more physically ready for birth.</p></div>
         </div>
         <div class="srv-faq-item">
             <button class="srv-faq-question" onclick="this.parentElement.classList.toggle('active')">Do I need my midwife's permission?</button>
@@ -167,8 +170,8 @@ get_header(); ?>
 <!-- CTA -->
 <div class="srv-cta">
     <div class="srv-inner">
-        <h2>Ready to feel supported through pregnancy?</h2>
-        <p>Book your appointment today. Your first session includes a full consultation so we can discuss your needs and create a treatment plan for your pregnancy journey.</p>
+        <h2>Give yourself the gift of an hour</h2>
+        <p>You deserve to feel supported through pregnancy. Book your appointment today — your first session includes a full consultation so we can discuss your needs and create a treatment plan for your journey.</p>
         <a href="https://jennysumnerbookings.as.me/" target="_blank" class="srv-cta-btn">Book Your Appointment</a>
     </div>
 </div>

@@ -49,6 +49,8 @@ get_header(); ?>
 .srv-centered p { max-width: 700px; margin-left: auto; margin-right: auto; }
 .srv-fade-in { opacity: 0; transform: translateY(25px); transition: opacity 0.7s ease, transform 0.7s ease; }
 .srv-fade-in.is-visible { opacity: 1; transform: translateY(0); }
+.srv-quote { font-family: 'Cormorant Garamond', Georgia, serif; font-size: 1.3rem; font-style: italic; color: #2c2c2c; text-align: center; max-width: 700px; margin: 0 auto 30px; line-height: 1.6; }
+.srv-quote-author { font-family: 'Mulish', sans-serif; font-size: 0.9rem; color: #666; text-align: center; }
 </style>
 
 <!-- Hero -->
@@ -56,7 +58,7 @@ get_header(); ?>
     <div class="srv-hero-content">
         <div class="srv-hero-label">Finding Calm</div>
         <h1>Reflexology for Anxiety &amp; Stress</h1>
-        <p class="srv-hero-sub">A safe, calming space to ease anxiety, quiet an overactive mind and restore a sense of balance, from a specialist reflexologist in Berkhamsted.</p>
+        <p class="srv-hero-sub">A safe space to pause, breathe and begin to feel like yourself again.</p>
     </div>
 </div>
 
@@ -65,10 +67,11 @@ get_header(); ?>
     <div class="srv-inner">
         <div class="srv-two-col">
             <div>
-                <h2>You don't have to carry it all alone</h2>
-                <p>Anxiety can feel relentless. The racing thoughts, the tightness in your chest, the broken sleep, the constant sense that something isn't quite right. Whether it's triggered by life changes, work pressure, health worries or hormonal shifts — it takes a toll on your whole body.</p>
+                <h2>I see you</h2>
+                <p>Anxiety can feel relentless. The racing thoughts, the tightness in your chest, the broken sleep, the constant sense that something isn't quite right. Whether it's triggered by life changes, work pressure, health worries, hormonal shifts or just the weight of everything you're carrying — it takes a toll on your whole body.</p>
+                <p>I know this because I've been there too. And I know that sometimes, what we need most is simply to feel held — a quiet space where we can pause, breathe and begin to return to ourselves.</p>
                 <p><strong>Reflexology can help.</strong></p>
-                <p>By working specific reflex points linked to the nervous system and adrenal glands, reflexology helps switch your body from "fight or flight" into a calmer, more balanced state. Many clients describe a profound sense of peace during and after treatment — often for the first time in months.</p>
+                <p>By working specific reflex points linked to the nervous system and adrenal glands, reflexology helps switch your body from "fight or flight" into a calmer, more balanced state. Many of my clients describe a profound sense of peace during and after treatment — often for the first time in months.</p>
             </div>
             <div>
                 <img src="<?php echo content_url(); ?>/uploads/2021/04/3PC2080A-scaled.jpeg" alt="Calming reflexology treatment in Berkhamsted" width="600" height="400" loading="lazy" />
@@ -77,11 +80,20 @@ get_header(); ?>
     </div>
 </div>
 
-<!-- How It Helps -->
+<!-- Quote Section -->
 <div class="srv-section srv-warm srv-fade-in">
+    <div class="srv-inner">
+        <p class="srv-quote">"Between stimulus and response there is a space. In that space is our power to choose our response."</p>
+        <p class="srv-quote-author">— Viktor Frankl</p>
+    </div>
+</div>
+
+<!-- How It Helps -->
+<div class="srv-section srv-fade-in">
     <div class="srv-inner">
         <h2>How reflexology helps with anxiety and stress</h2>
         <p>When you're stressed or anxious, your body produces excess cortisol and adrenaline — the hormones responsible for the "fight or flight" response. Over time, this becomes chronic, affecting your sleep, digestion, immune system and mood. Reflexology works to calm the nervous system, reduce cortisol levels and encourage the body to return to a state of equilibrium.</p>
+        <p>It's not a cure. It's not a replacement for therapy or medication. But it's a powerful tool to add to your wellbeing toolkit — and tending to ourselves doesn't need to be a lavish affair. Often it's the simple things that keep us grounded and able to return to ourselves.</p>
         <h3>What my clients experience</h3>
         <ul class="srv-benefits">
             <li>A deep sense of calm and relaxation during treatment</li>
@@ -95,7 +107,7 @@ get_header(); ?>
 </div>
 
 <!-- What to Expect -->
-<div class="srv-section srv-fade-in">
+<div class="srv-section srv-warm srv-fade-in">
     <div class="srv-inner">
         <div class="srv-two-col-rev">
             <div>
@@ -103,63 +115,65 @@ get_header(); ?>
             </div>
             <div>
                 <h2>What to expect from your treatment</h2>
-                <p>Your first session begins with a conversation. I want to understand what's going on for you — what triggers your anxiety, how it manifests in your body, and what you're hoping to achieve. There is no judgement, only care.</p>
-                <p>During treatment, you'll lie comfortably while I work through reflex points that target the nervous system, adrenals, solar plexus and brain. Most clients feel a wave of calm within the first few minutes. Many fall asleep. Sessions last approximately 45–60 minutes.</p>
-                <p>For anxiety and stress, I recommend an initial course of weekly sessions for 4–6 weeks. Many clients then continue with regular maintenance sessions as part of their ongoing self-care. The cumulative effect is where the real transformation happens.</p>
+                <p>Your first session begins with a conversation. I want to understand what's going on for you — what triggers your anxiety, how it manifests in your body, and what you're hoping to achieve. There is no judgement here, only care.</p>
+                <p>During treatment, you'll lie comfortably while I work through reflex points that target the nervous system, adrenals, solar plexus and brain. Most clients feel a wave of calm within the first few minutes. Many fall asleep — and that's perfectly fine. It's a sign your body is doing what it needs to do.</p>
+                <p>Reflexology works best cumulatively. I typically recommend weekly sessions for 4–6 weeks to allow the benefits to build, followed by maintenance as part of your ongoing self-care. But even a single session can provide noticeable relief. Little by little, step by step.</p>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Testimonials -->
-<div class="srv-section srv-warm srv-fade-in">
+<!-- ⚠️ PLACEHOLDER TESTIMONIALS - NEED REAL QUOTES FROM JENNY'S ANXIETY/STRESS CLIENTS -->
+<div class="srv-section srv-fade-in">
     <div class="srv-inner">
         <h2 style="text-align: center;">What my clients say</h2>
         <div class="srv-testimonials">
             <div class="srv-testimonial-card">
                 <p>I came to Jenny at a point where my anxiety was overwhelming. After just a few sessions, I felt noticeably calmer and was sleeping through the night for the first time in months.</p>
-                <span class="srv-author">— Anxiety client</span>
+                <span class="srv-author">— [NEEDS REAL NAME]</span>
             </div>
             <div class="srv-testimonial-card">
                 <p>Jenny creates the most calming environment. From the moment I walk in, I feel the stress begin to lift. Reflexology has become an essential part of managing my mental health.</p>
-                <span class="srv-author">— Stress client</span>
+                <span class="srv-author">— [NEEDS REAL NAME]</span>
             </div>
             <div class="srv-testimonial-card">
                 <p>I was sceptical at first, but the difference in how I feel after regular reflexology is undeniable. My anxiety is more manageable and I feel more like myself again.</p>
-                <span class="srv-author">— Anxiety client</span>
+                <span class="srv-author">— [NEEDS REAL NAME]</span>
             </div>
         </div>
     </div>
 </div>
 
 <!-- Approach -->
-<div class="srv-section srv-centered srv-fade-in">
+<div class="srv-section srv-warm srv-centered srv-fade-in">
     <div class="srv-inner">
-        <h2>A holistic approach to anxiety</h2>
+        <h2>Part of your wellbeing toolkit</h2>
         <p>Reflexology is not a replacement for professional mental health support — but it is a powerful complement to it. Many of my clients use reflexology alongside therapy, medication or other wellbeing practices. I'm always happy to work alongside your GP or therapist.</p>
-        <p>I trained in the Eunice Ingham method at The London School of Reflexology and hold a Level 3 qualification with full insurance. I am a proud member of the Association of Reflexologists.</p>
+        <p>I trained in the Eunice Ingham method at The London School of Reflexology and hold a Level 3 qualification with full insurance. I am a proud member of the Association of Reflexologists. I'm also an ICF-accredited Life Coach, so I understand the mind-body connection deeply.</p>
+        <p>At the heart of it all, my purpose is simple: to help support your body and mind to be in the best state they can be.</p>
     </div>
 </div>
 
 <!-- FAQ -->
-<div class="srv-section srv-warm srv-fade-in">
+<div class="srv-section srv-fade-in">
     <div class="srv-inner" style="max-width: 800px;">
         <h2 style="text-align: center;">Frequently asked questions</h2>
         <div class="srv-faq-item">
             <button class="srv-faq-question" onclick="this.parentElement.classList.toggle('active')">Can reflexology really help with anxiety?</button>
-            <div class="srv-faq-answer"><p>Yes. Reflexology works by calming the nervous system and reducing cortisol levels. Many clients report significant improvements in anxiety symptoms, sleep quality and overall mood after regular sessions. It is not a cure, but it is a deeply effective support.</p></div>
+            <div class="srv-faq-answer"><p>Yes. Reflexology works by calming the nervous system and reducing cortisol levels. Many clients report significant improvements in anxiety symptoms, sleep quality and overall mood after regular sessions. It's not a cure, but it's a deeply effective support — and it's powerful stuff.</p></div>
         </div>
         <div class="srv-faq-item">
             <button class="srv-faq-question" onclick="this.parentElement.classList.toggle('active')">How many sessions will I need?</button>
-            <div class="srv-faq-answer"><p>I typically recommend starting with 4–6 weekly sessions to build the cumulative benefit. Many clients then continue with fortnightly or monthly maintenance sessions. However, even a single session can provide noticeable relief.</p></div>
+            <div class="srv-faq-answer"><p>I typically recommend starting with 4–6 weekly sessions to build the cumulative benefit. Many clients then continue with fortnightly or monthly maintenance sessions as part of their self-care routine. However, even a single session can provide noticeable relief.</p></div>
         </div>
         <div class="srv-faq-item">
             <button class="srv-faq-question" onclick="this.parentElement.classList.toggle('active')">Can I have reflexology alongside medication or therapy?</button>
-            <div class="srv-faq-answer"><p>Absolutely. Reflexology is a complementary therapy and works well alongside medication, talking therapies and other wellbeing practices. It is not a replacement for professional mental health support.</p></div>
+            <div class="srv-faq-answer"><p>Absolutely. Reflexology is a complementary therapy and works well alongside medication, talking therapies and other wellbeing practices. It is not a replacement for professional mental health support — think of it as another tool in your toolkit.</p></div>
         </div>
         <div class="srv-faq-item">
             <button class="srv-faq-question" onclick="this.parentElement.classList.toggle('active')">What if I feel emotional during a session?</button>
-            <div class="srv-faq-answer"><p>This is completely normal and nothing to worry about. Reflexology can release stored tension and emotion — it's a sign that your body is processing and letting go. I create a safe, supportive space where you can simply be.</p></div>
+            <div class="srv-faq-answer"><p>This is completely normal and nothing to worry about. Reflexology can release stored tension and emotion — it's a sign that your body is processing and letting go. I create a safe, supportive space where you can simply be. There is no judgement here.</p></div>
         </div>
     </div>
 </div>
@@ -168,7 +182,7 @@ get_header(); ?>
 <div class="srv-cta">
     <div class="srv-inner">
         <h2>Ready to find some calm?</h2>
-        <p>Book your appointment today. Your first session includes a full consultation so we can discuss what you're experiencing and how reflexology can help.</p>
+        <p>This is your gentle nudge. Book your appointment today — your first session includes a full consultation so we can discuss what you're experiencing and how reflexology can support you.</p>
         <a href="https://jennysumnerbookings.as.me/" target="_blank" class="srv-cta-btn">Book Your Appointment</a>
     </div>
 </div>
